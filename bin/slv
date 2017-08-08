@@ -1,0 +1,46 @@
+#!/usr/bin/env node
+'use strict';
+
+// Provide a title to the process in `ps`
+process.title = 'salvia-cli';
+
+var salvia = require('../'),
+  argv = process.argv.slice(2),
+  pack = require('../package.json'),
+  command = Object.keys(pack.bin)[0],
+  i18n = require('../lib/i18n.js');
+
+/**
+ * Help.
+ *
+ * @return {string}
+ */
+function help() {
+  return [
+    '',
+    i18n.__('Usage') + ': ' + command + ' [' + i18n.__('options') + ']',
+    '',
+    i18n.__(pack.description),
+    '',
+    i18n.__('Usage') + ':',
+    '',
+    '  -h, --help           ' + i18n.__('output') + ' ' + i18n.__('usage information'),
+    '  -v, --version        ' + i18n.__('output') + ' ' + i18n.__('version number'),
+    '',
+    i18n.__('Usage') + ':',
+    '',
+    '# Scaffold theme',
+    '$ ' + command + ' new',
+    ''
+  ].join('\n  ') + '\n';
+}
+
+if (argv.indexOf('--help') !== -1 || argv.indexOf('-h') !== -1) {
+  console.log(help());
+} else if (argv.indexOf('--version') !== -1 || argv.indexOf('-v') !== -1) {
+  console.log(pack.version);
+} else if (argv.length) {
+  salvia();
+} else {
+  console.log(help());
+}

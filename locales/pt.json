@@ -1,0 +1,14 @@
+{
+	"test": "teste",
+	"Output must be equals %s": "Saída deve ser igual a %s",
+	"Usage": "Uso",
+	"output": "exibe",
+	"usage information": "informação de uso",
+	"version number": "número da versão",
+	"options": "opções",
+	"Scaffold for WordPress theme": "Scaffold para tema WordPress",
+	"Theme Name": "Nome do Tema",
+	"Name must be only letters, spaces, or dashes": "Nome deve conter somente letras, espaços e traços",
+	"Command-line input received": "Entrada recebida por linha de comando",
+	"name": "nome"
+}

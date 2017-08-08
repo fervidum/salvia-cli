@@ -1,0 +1,8 @@
+create table options(option_id integer not null primary key autoincrement, option_name varchat(191) not null default "", option_value text not null, autoload varchar(20), unique(option_name));
+
+insert into options (option_name, option_value) values('siteurl', 'http://localhost:8080');
+
+select * from options;
+
+select option_value from options where option_name = 'siteurl';
+

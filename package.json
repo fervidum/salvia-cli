@@ -1,0 +1,40 @@
+{
+  "name": "salvia",
+  "version": "1.0.0",
+  "description": "Scaffold for WordPress theme",
+  "main": "./salvia",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fervidum/salvia.git"
+  },
+  "keywords": [
+    "wordpress",
+    "scaffold",
+    "theme"
+  ],
+  "author": "Gilberto Tavares <camaleaun@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fervidum/salvia/issues"
+  },
+  "homepage": "https://fervidum.github.io/salvia",
+  "bin": {
+    "slv": "./bin/slv"
+  },
+  "dependencies": {
+    "command-exists": "^1.2.2",
+    "compare-versions": "^3.0.1",
+    "hash-files": "^1.1.1",
+    "i18n": "^0.8.3",
+    "os-locale": "^2.0.0",
+    "prompt": "^1.0.0",
+    "remove-accents": "^0.4.0",
+    "request": "^2.81.0"
+  },
+  "devDependencies": {
+    "mocha": "^3.4.2"
+  }
+}

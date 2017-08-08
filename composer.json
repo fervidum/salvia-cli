@@ -1,0 +1,17 @@
+{
+    "name": "fervidum/salvia",
+    "description": "Scaffold for WordPress theme",
+    "type": "wordpress-theme",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Gilberto Tavares",
+            "email": "camaleaun@gmail.com"
+        }
+    ],
+    "scripts": {
+        "post-create-project-cmd": [
+            "SageInit.php"
+        ]
+    }
+}
